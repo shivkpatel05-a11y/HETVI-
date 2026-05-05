@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Georgia', serif;
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
+  --color-cr-red: #7a0c1c;
+  --color-cr-dark: #2b0208;
+  --color-cr-pink: #ffd6e0;
+}
+
+body {
+  background-color: #1a0306;
+  color: #ffd6e0;
+  overscroll-behavior: none;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar for a seamless, cinematic experience */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom Effects */
+.danger-glow {
+  text-shadow: 0 0 15px rgba(255, 214, 224, 0.8);
+}
+
+.radial-blood {
+  background: radial-gradient(circle at 50% 50%, #7a0c1c 0%, #3a060d 70%, #1a0306 100%);
+}
+
+.glow-hover {
+  transition: all 0.5s ease;
+}
+.glow-hover:hover {
+  color: rgba(255, 214, 224, 0.8);
+  text-shadow: 0 0 10px rgba(255, 214, 224, 0.4);
+}
